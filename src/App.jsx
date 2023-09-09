@@ -1,5 +1,10 @@
-
 import './App.css'
+import {
+  Routes,
+  Route, Link
+} from "react-router-dom";
+
+import AlunosPage from './AlunosPage';
 
 function App() {
  
@@ -9,7 +14,7 @@ function App() {
      <header>
       <nav>
         <ul>
-          <li>alunos</li>
+          <Link to="/AlunosPage">alunos</Link>
           <li>mensalidade</li>
           <li>Home</li>
         </ul>
@@ -18,7 +23,10 @@ function App() {
      </header>
      <main>
       <div>Cave Gym</div>
-
+      <Routes>
+        {/* Componente de uma rota específica */}
+        <Route path="about" element={<AlunosPage/>} />
+      </Routes>
      </main>
     </>
   )
