@@ -1,0 +1,26 @@
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.card {
+  border: solid 1px #00437a;
+  border-radius: 8px;
+  background-color: #000A14;
+  box-shadow: 1px 2px 10px #000A14;
+  padding: 10px;
+  margin: 20px;
+}
+
+.cardTitle{
+    background-color: #000A14;
+    color: #C2E3FF;
+}
+
+.cardDescri{
+    background-color: #000A14;
+    color: #C2E3FF;
+}

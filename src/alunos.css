@@ -1,0 +1,50 @@
+.container{
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 50px;
+    padding: 10px;
+    border: solid 1px #003566;
+    border-radius: 8px;
+    background-color: #000814;
+    box-shadow: 1px 2px 20px #000814;
+}
+
+.title{
+    color: #FFD60A;
+    background-color: #000814;
+}
+
+.list{
+    padding: 4px;
+    margin: 4px;
+    font-size: 20px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    list-style: none;
+    background-color: #000814;
+}
+
+.alunos{
+    margin:5px;
+    padding: 8px;
+    border: 1px solid #FFD60A;
+    border-radius: 8px;
+}
+
+.inputAlunos{
+    border: none;
+    height: 30px;
+    width: 400px;
+    padding: 4px;
+    background-color: #00437A;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.btnAluno{
+    border: none;
+    height: 30px;
+    width: 150px;
+    background-color: #00437A;
+    border-radius: 4px;
+}
