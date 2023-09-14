@@ -20,6 +20,7 @@ export default function Alunos() {
                     <li key={index} className='alunos'>{aluno}</li>
                 ))}
             </ul>
+            <div className='input'>
             <input
                 type="text"
                 placeholder="Nome do Aluno"
@@ -28,6 +29,8 @@ export default function Alunos() {
                 className='inputAlunos'
             />
             <button onClick={handleAddAluno} className='btnAluno'>Adicionar Aluno</button>
+            </div>
+
         </div>
     )
 }

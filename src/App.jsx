@@ -3,7 +3,6 @@ import { Routes, Route, Link } from "react-router-dom";
 
 import Alunos from './Alunos';
 import Mensalidade from './Mensalidade';
-import Cards from './components/cards';
 
 function App() {
 
@@ -25,15 +24,14 @@ function App() {
           <h1 className='heroTitle'>Cave Gym</h1>
           <p className='heroSubTitle'>Gerencie seus alunos da sua academia com o Cave Gym</p>
         </div>
-        <Cards/>
+        <div>
+          <Routes>
+            <Route path="Alunos" element={<Alunos />} />
+            <Route path='Mensalidade' element={<Mensalidade />} />
+          </Routes>
+        </div>
       </main>
 
-      <div>
-        <Routes>
-          <Route path="Alunos" element={<Alunos />} />
-          <Route path='Mensalidade' element={<Mensalidade />} />
-        </Routes>
-      </div>
     </>
   )
 }

@@ -1,12 +1,13 @@
 .container{
-    margin-left: 400px;
-    margin-right: 400px;
     margin-top: 50px;
     padding: 10px;
     border: solid 1px #003566;
     border-radius: 8px;
     background-color: #000814;
     box-shadow: 1px 2px 20px #000814;
+    width: 800px;
+    display: block;
+    margin: auto;
 }
 
 .title{
@@ -29,6 +30,11 @@
     padding: 8px;
     border: 1px solid #FFD60A;
     border-radius: 8px;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
 }
 
 .inputAlunos{

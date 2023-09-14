@@ -33,16 +33,21 @@ header{
 
 .hero{
     background-color: #000814;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px;
 }
 
 .heroTitle{
-    text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #007FE0;
+    text-align: center;
 }
 
 .heroSubTitle{
     text-align: center;
     font-size: 1.5rem;
     color: #99CCFF;
+    margin-bottom: 10px;
 }
