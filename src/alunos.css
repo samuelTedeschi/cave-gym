@@ -1,9 +1,9 @@
 .container{
     margin-top: 50px;
     padding: 10px;
-    border: solid 1px #003566;
+    border: solid 1px #121810;
     border-radius: 8px;
-    background-color: #000814;
+    background-color: #020A12;
     box-shadow: 1px 2px 20px #000814;
     width: 800px;
     display: block;
@@ -11,46 +11,51 @@
 }
 
 .title{
-    color: #FFD60A;
-    background-color: #000814;
+    color: #F1E8E5;
+    background-color: #020A12;
 }
 
 .list{
     padding: 4px;
     margin: 4px;
     font-size: 20px;
-    color: whitesmoke;
+    color: #F1E8E5;
     text-transform: uppercase;
     list-style: none;
-    background-color: #000814;
+    background-color: #020A12;
 }
 
 .alunos{
     margin:5px;
     padding: 8px;
-    border: 1px solid #FFD60A;
+    border: 1px solid #1669B6;
     border-radius: 8px;
 }
 
 .input{
     display: flex;
     justify-content: center;
+    background-color: #020A12;
 }
 
 .inputAlunos{
     border: none;
-    height: 30px;
-    width: 400px;
+    height: 40px;
+    width: 500px;
     padding: 4px;
-    background-color: #00437A;
-    margin-right: 10px;
+    background-color: #1B7EDA;
+    margin-right: 20px;
     border-radius: 4px;
+    font-size: 1.1rem;
+    color: #F1E8E5;
 }
 
 .btnAluno{
     border: none;
-    height: 30px;
-    width: 150px;
-    background-color: #00437A;
+    height: 40px;
+    width: 200px;
+    background-color: #1B7EDA;
     border-radius: 4px;
+    font-size: 1rem;
+    color: #F1E8E5;
 }
