@@ -24,7 +24,7 @@ export default function Alunos() {
             <ul className='list'>
                 {alunos.map((aluno, index) => (
                     <li key={index} className='alunos'>{aluno}
-                    <button onClick={() => handleRemoverAluno(index)}>Remover</button>
+                    <button onClick={() => handleRemoverAluno(index)} className='btnRemove'>Remover</button>
                     </li>
                     
                 ))}

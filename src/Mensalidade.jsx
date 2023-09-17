@@ -19,12 +19,11 @@ export default function Mensalidade() {
 
     return (
         <div className='container'>
-            <div>
                 <h2 className='title'>Sistema de Mensalidade</h2>
                 <ul className='list'>
                     {mensalidades.map((alunoMensalidade, index) => (
                         <li key={index} className='alunos'>{alunoMensalidade} - Pago
-                        <button onClick={() => handleRemoverAluno(index)}>Remover</button>
+                        <button onClick={() => handleRemoverAluno(index)} className='btnRemove'>Remover</button>
                         </li>
                         
                     ))}
@@ -35,7 +34,7 @@ export default function Mensalidade() {
                     className='inputAlunos'
                 />
                 <button onClick={handleRegistrarMensalidade} className='btnAluno'>Registrar Mensalidade</button>
-            </div>
+        
         </div>
     )
 }
