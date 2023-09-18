@@ -1,22 +1,32 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Mensalidade() {
     const [aluno, setAluno] = useState('');
     const [mensalidades, setMensalidades] = useState([]);
 
-    const handleRegistrarMensalidade = () => {
-        if (aluno.trim() !== '') {
-            setMensalidades([...mensalidades, aluno]);
-            setAluno('');
+    useEffect(() => {
+        const storedMensalidades = JSON.parse(localStorage.getItem('mensalidades'));
+        if (storedMensalidades) {
+          setMensalidades(storedMensalidades);
         }
-    };
+      }, []);
 
-    const handleRemoverAluno = (index) => {
+      const handleRegistrarMensalidade = () => {
+        if (aluno.trim() !== '') {
+          const novaMensalidade = [...mensalidades, aluno];
+          setMensalidades(novaMensalidade);
+          localStorage.setItem('mensalidades', JSON.stringify(novaMensalidade));
+          setAluno('');
+        }
+      };
+    
+      const handleRemoverAluno = (index) => {
         const novasMensalidades = [...mensalidades];
         novasMensalidades.splice(index, 1);
         setMensalidades(novasMensalidades);
-    };
-
+        localStorage.setItem('mensalidades', JSON.stringify(novasMensalidades));
+      };
+    
     return (
         <div className='container'>
                 <h2 className='title'>Sistema de Mensalidade</h2>
