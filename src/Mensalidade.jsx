@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import './alunos.css'
 
 export default function Mensalidade() {
     const [aluno, setAluno] = useState('');
