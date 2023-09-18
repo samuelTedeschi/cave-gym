@@ -39,12 +39,15 @@ export default function Mensalidade() {
                         
                     ))}
                 </ul>
-                <input type="text"
-                    value={aluno}
-                    onChange={(e) => setAluno(e.target.value)}
-                    className='inputAlunos'
-                />
-                <button onClick={handleRegistrarMensalidade} className='btnAluno'>Registrar Mensalidade</button>
+                <div className='input'>
+                  <input 
+                      type="text"
+                      value={aluno}
+                      onChange={(e) => setAluno(e.target.value)}
+                      className='inputAlunos'
+                  />
+                  <button onClick={handleRegistrarMensalidade} className='btnAluno'>Registrar Mensalidade</button>
+                </div>
         
         </div>
     )

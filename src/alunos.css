@@ -1,18 +1,31 @@
 .container{
-    margin-top: 50px;
     padding: 10px;
     border: solid 1px #121810;
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: #020A12;
     box-shadow: 1px 2px 20px #000814;
-    width: 800px;
+    width: 700px;
     display: block;
     margin: auto;
+}
+
+.containerTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #020A12;
 }
 
 .title{
     color: #F1E8E5;
     background-color: #020A12;
+}
+
+.contador{
+    color: #F1E8E5;
+    background-color: #020A12;
+    border-bottom: solid 1px #1B7EDA;
+    padding: 4px;
 }
 
 .list{
@@ -47,7 +60,7 @@
     padding: 4px;
     background-color: #1B7EDA;
     margin-right: 20px;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 1.1rem;
     color: #F1E8E5;
 }
@@ -57,9 +70,14 @@
     height: 40px;
     width: 200px;
     background-color: #1B7EDA;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 1rem;
     color: #F1E8E5;
+    cursor: pointer;
+}
+
+.btnAluno:hover{
+    background-color: #1669B6;
 }
 
 .btnRemove{

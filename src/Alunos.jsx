@@ -34,8 +34,10 @@ export default function Alunos() {
 
     return (
         <div className='container'>
-            <h1 className='title'>Alunos</h1>
-            <p>Total de Alunos: {contadorAlunos}</p>
+            <div className='containerTitle'>
+                <h1 className='title'>Alunos</h1>
+                <p className='contador'>Alunos Presentes: {contadorAlunos}</p>
+            </div>
             <ul className='list'>
                 {alunos.map((aluno, index) => (
                     <li key={index} className='alunos'>{aluno}
